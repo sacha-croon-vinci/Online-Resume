@@ -4,6 +4,7 @@ import { Code, Terminal } from 'lucide-react';
 export function InteractiveWidget() {
   const [activeTab, setActiveTab] = useState<'hello' | 'loop'>('hello');
   const [isRunning, setIsRunning] = useState(false);
+  const [response, setResponse] = useState(false);
 
   const codeExamples = {
     hello: {
@@ -22,7 +23,9 @@ export function InteractiveWidget() {
 
   const handleRun = () => {
     setIsRunning(true);
-    setTimeout(() => setIsRunning(false), 1500);
+    const delayTime = 900;
+    setTimeout(() => setIsRunning(false), delayTime);
+    setTimeout(()=> setResponse(true), delayTime);
   };
 
   return (
@@ -34,7 +37,9 @@ export function InteractiveWidget() {
       
       <div className="flex gap-2 mb-4">
         <button
-          onClick={() => setActiveTab('hello')}
+          onClick={() => {setActiveTab('hello'); setResponse(false);
+
+          }}
           className={`px-4 py-2 rounded-lg transition-colors ${
             activeTab === 'hello'
               ? 'bg-blue-500 text-white'
@@ -44,7 +49,7 @@ export function InteractiveWidget() {
           Hello World
         </button>
         <button
-          onClick={() => setActiveTab('loop')}
+          onClick={() => {setActiveTab('loop'); setResponse(false)}}
           className={`px-4 py-2 rounded-lg transition-colors ${
             activeTab === 'loop'
               ? 'bg-blue-500 text-white'
@@ -75,6 +80,13 @@ export function InteractiveWidget() {
       >
         {isRunning ? 'Running...' : 'Run Code'}
       </button>
+      <div className='mt-4 px-6 py-2 rounded-lg bg-gray-300'>
+        Response : 
+        {activeTab=== 'hello' ? (response ? ' Hello, World!' : '') : 
+          (response ? ' 012345' : '')
+        }
+        
+      </div>
     </div>
   );
 }

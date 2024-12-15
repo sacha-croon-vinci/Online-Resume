@@ -1,5 +1,9 @@
 {
-  "name": "vite-react-typescript-starter",
+  "name": "Online Resume",
+  "author": {
+    "name": "Sacha Croon",
+    "email": "sacha.croon@student.vinci.be"
+  },
   "private": true,
   "version": "0.0.0",
   "type": "module",

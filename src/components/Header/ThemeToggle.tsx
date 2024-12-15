@@ -1,5 +1,5 @@
 import { Sun, Moon } from 'lucide-react';
-import type { Theme } from '../types/theme';
+import type { Theme } from '../../types/theme';
 
 interface ThemeToggleProps {
   theme: Theme;

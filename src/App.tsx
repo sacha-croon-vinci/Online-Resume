@@ -1,5 +1,5 @@
 import { useTheme } from './hooks/useTheme';
-import { ThemeToggle } from './components/ThemeToggle';
+import { ThemeToggle } from './components/Header/ThemeToggle';
 import { Hero } from './components/Hero';
 import { SkillCard } from './components/SkillCard';
 import { InteractiveWidget } from './components/InteractiveWidget';

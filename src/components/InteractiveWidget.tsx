@@ -64,7 +64,7 @@ export function InteractiveWidget() {
         {Object.entries(codeExamples[activeTab]).map(([lang, code]) => (
           <div key={lang} className="bg-gray-100 dark:bg-gray-900 rounded-lg p-4">
             <div className="flex justify-between items-center mb-2">
-              <span className="text-sm font-semibold dark:text-gray-300 capitalize">{lang}</span>
+              <span className="text-sm font-semibold dark:text-gray-300 capitalize size-7">{lang}</span>
               <Terminal className="w-4 h-4 text-gray-500" />
             </div>
             <pre className="text-sm dark:text-gray-300 font-mono">{code}</pre>
@@ -83,8 +83,9 @@ export function InteractiveWidget() {
       <div className='mt-4 px-6 py-2 rounded-lg bg-gray-300'>
         Response : 
         {activeTab=== 'hello' ? (response ? ' Hello, World!' : '') : 
-          (response ? ' 012345' : '')
+          (response ? ' 0\n1\n2\n3\n4\n5' : '')
         }
+        
         
       </div>
     </div>

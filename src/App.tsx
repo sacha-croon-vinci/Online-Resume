@@ -8,9 +8,9 @@ function App() {
   const { theme, toggleTheme } = useTheme();
 
   const programmingLanguages = ['Python', 'Java', 'TypeScript', 'JavaScript', 'C', 'HTML', 'CSS','SQL'];
-  const technologies = ['React', 'Node.js', 'Git', 'Vanilla JS'];
-  const tools = ['VS Code', 'Github', 'Figma', 'Lucidchart','DataGrip','intelij','PyCharm'];
-  const DataBase = ['MongoDB', 'MySQL', 'PostgreSQL', 'SQLite'];
+  const technologies = ['React', 'Node.js', 'Git', 'Vanilla JS','Tailwind','Bootstrap','Express.js','Junit','Next.js','REST','JWT','Vite'];
+  const tools = ['VS Code', 'Github', 'Figma', 'Lucidchart','DataGrip','Intelij','PyCharm'];
+  const DataBase = ['MongoDB', 'MySQL', 'PostgreSQL', 'SQLite','UML','SQL'];
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
@@ -38,6 +38,7 @@ function App() {
           <SkillCard 
             title="DataBase" 
             items={DataBase}
+            icon='database'
             
           />
         </div>

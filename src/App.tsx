@@ -45,7 +45,7 @@ function App() {
       location: 'Brussels, Belgium',
       company: 'Self-employed',
       date: '2024 - present',
-      description: 'As a webmaster, I have designed and developed the website. I managed all stages of the project, from initial planning to launch, including graphic design, development, and search engine optimisation. My role also involved ongoing site management, performance analysis, and implementing regular updates to ensure an optimal user experience.',
+      description: 'As a webmaster, I have designed and developed the website for a client. I managed all stages of the project, from initial planning to launch, including graphic design, development, and search engine optimisation. My role also involved ongoing site management, performance analysis, and implementing regular updates to ensure an optimal user experience.',
       option: ['Webmaster', 'SEO', 'Wordpress',],
       language: ['French', 'English'],
     },

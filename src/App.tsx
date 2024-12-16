@@ -16,7 +16,7 @@ function App() {
   const studies = [
     {
       title: 'Bachelor degree in Computer Science',
-      school: 'Davinci School (Institut Paul Lambin)',
+      school: 'University College Léonard de Vinci (Institut Paul Lambin)',
       date: '2023 - present',
       link: 'https://www.vinci.be/en/',
       option: ['Software development','Cybersecurity'],

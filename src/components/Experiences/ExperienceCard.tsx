@@ -16,8 +16,8 @@ export function ExperienceCard({ data }: ExperienceCardProps) {
     
     return (
         <div className="bg-white dark:bg-gray-800 p-6 mb-16 rounded-xl  shadow-lg hover:shadow-2xl transition-shadow">
-            <div className="flex gap-3 pl-5 pr-5 mb-4 justify-center">
-                <img src="/src/public/images/briefcase.png"  alt="study image" className="w-10 h-10"/>
+            <div className="flex gap-3 pl-5 pr-5 mb-8 justify-center">
+                <img src="/src/public/images/briefcase.png"  alt="study image" className="w-8 h-8 dark:invert"/>
                 <h3 className="text-2xl font-bold dark:text-white ">Experiences</h3>
             </div>
             {data.slice(0, showMore ? data.length : 2).map((experience) => (

@@ -6,6 +6,7 @@ import { InteractiveWidget } from './components/InteractiveWidget';
 import { StudyCard } from './components/Studies/StudyCard';
 import { ExperienceCard } from './components/Experiences/ExperienceCard';
 import ScrollToTopButton from './components/Scroll/ScrollToTopButton';
+import { Navbar } from './components/Navbar/Navbar';
 
 function App() {
   const { theme, toggleTheme } = useTheme();
@@ -96,6 +97,7 @@ function App() {
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
       <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
       <ScrollToTopButton />
+      <Navbar />
       
       <main className="container mx-auto px-4 py-16">
         <Hero />
@@ -124,12 +126,12 @@ function App() {
           />
         </div>
         
-        <div className="border-t border-gray-300 dark:border-gray-700 my-8 pt-8 pb-8"></div> {/* Line of separation */}
+        <div id="studies" className="border-t border-gray-300 dark:border-gray-700 my-8 pt-8 pb-8"></div> {/* Line of separation */}
 
         <StudyCard data={studies}/>
         
         
-        <div className="border-t border-gray-300 dark:border-gray-700 my-8 pt-8 pb-8"></div> {/* Line of separation */}
+        <div id="experiences" className="border-t border-gray-300 dark:border-gray-700 my-8 pt-8 pb-8"></div> {/* Line of separation */}
 
         <ExperienceCard data={experiences} />
 

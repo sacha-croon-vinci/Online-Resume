@@ -1,5 +1,5 @@
 import { Code2, Terminal,  } from 'lucide-react';
-import {SiSqlite } from 'react-icons/si'; // Importing database icons
+import {SiSqlite } from 'react-icons/si'; 
 
 
 interface SkillCardProps {
@@ -12,7 +12,7 @@ export function SkillCard({ title, items, icon = 'code' }: SkillCardProps) {
 
 
   return (
-    <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow">
+    <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow select-none">
       <div className="flex items-center gap-3 mb-4">
         {icon === 'database' ? <SiSqlite /> : null}
         {icon === 'code' ? (
@@ -28,7 +28,7 @@ export function SkillCard({ title, items, icon = 'code' }: SkillCardProps) {
           <span
             key={item}
             className="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm
-                     dark:text-gray-300"
+                     dark:text-gray-300 transform transition-transform duration-200 hover:scale-110 hover:bg-green-500 dark:hover:bg-red-500 hover:text-white"
           >
             {item}
           </span>

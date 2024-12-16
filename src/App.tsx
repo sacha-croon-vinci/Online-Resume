@@ -5,6 +5,7 @@ import { SkillCard } from './components/SkillCard';
 import { InteractiveWidget } from './components/InteractiveWidget';
 import { StudyCard } from './components/Studies/StudyCard';
 import { ExperienceCard } from './components/Experiences/ExperienceCard';
+import ScrollToTopButton from './components/Scroll/ScrollToTopButton';
 
 function App() {
   const { theme, toggleTheme } = useTheme();
@@ -94,6 +95,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
       <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
+      <ScrollToTopButton />
       
       <main className="container mx-auto px-4 py-16">
         <Hero />

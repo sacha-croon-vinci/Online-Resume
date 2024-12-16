@@ -20,7 +20,7 @@ export function StudyItem({title, school, date, link, option}: ItemProps) {
                 {option?.map((item) => (
                     <span
                         key={item}
-                        className="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm
+                        className="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm select-none
                         dark:text-gray-300 transform transition-transform duration-200 hover:scale-110 hover:bg-green-500 dark:hover:bg-red-500 hover:text-white"
                     >
                         {item}

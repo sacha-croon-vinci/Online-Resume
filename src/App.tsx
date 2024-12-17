@@ -171,7 +171,7 @@ function App() {
         <div id='langages' className="border-t border-gray-300 dark:border-gray-700 my-8 pt-8 pb-8"></div> 
 
         <div className='flex justify-center   py-1 mb-10 mx-60 select-none'>
-          <h2 className=' dark:text-white px-5 py-2 rounded-full bg-white dark:bg-gray-800 shadow-lg text-2xl font-semibold'>Langages</h2>
+          <h2 className=' dark:text-white px-5 py-2 rounded-full bg-white dark:bg-gray-800 shadow-lg text-2xl font-semibold'>Languages</h2>
         </div>
 
         <LanguageCard data={languages}/>

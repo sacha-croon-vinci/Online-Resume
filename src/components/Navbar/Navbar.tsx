@@ -1,5 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
+import openMenu from "/src/public/images/menuOpen.png";
+import menu from "/src/public/images/menu.png";
 
 
 export function Navbar() {
@@ -15,12 +17,12 @@ export function Navbar() {
             <div className="flex justify-end  text-2xl  dark:text-white">
                 <div className="fixed top-3 right-4 p-2 mr-10 select-none z-50 ">
                     {isDropdownOpen ? (<img 
-                        src="/src/public/images/menuOpen.png" 
+                        src={openMenu} 
                         className='w-8 dark:invert z-max' 
                         alt="menu"
                         onClick={handleDropdown}
                         />): (<img 
-                            src="/src/public/images/menu.png" 
+                            src={menu} 
                             className='w-8 transition-transform hover:scale-110 dark:invert z-max' 
                             alt="menu"
                             onClick={handleDropdown}

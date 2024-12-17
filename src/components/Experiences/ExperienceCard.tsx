@@ -1,7 +1,7 @@
 import { Experience } from "../../../type";
 import { ExperienceItem } from "./ExperienceItem";
 import { useState } from "react";
-import experiencesImage from "../../assets/experiences.svg";
+import experiencesImage from "/src/public/images/briefcase.png";
 
 interface ExperienceCardProps {
     data : Experience[];

@@ -1,6 +1,6 @@
 import { Study } from "../../../type";
 import { StudyItem } from "./StudyItem";
-import studyImage from "../../assets/study.svg";
+import studyImage from "/src/public/images/graduation-hat.png";
 
 interface StudyCardProps {
     data: Study[];

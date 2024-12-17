@@ -30,7 +30,7 @@ export function ExperienceItem({ title,it, location, company, date, description,
                 <p>Company : {company}</p>
                 <p>{date}</p>
                 <p >{description}</p>
-                <div className="flex fle gap-5 mt-4">
+                <div className="flex gap-5 mt-4">
                     {option && (
                         <ul className="list-disc list-inside">
                             {option.map((item) => (

@@ -33,6 +33,8 @@ export function Navbar() {
                             <a href="/#skills" onClick={handleDropdown} className="block px-4 py-2 text-black dark:text-white hover:bg-slate-100 dark:hover:bg-gray-600 transition-transform hover:scale-105">Skills</a>
                             <a href="/#studies" onClick={handleDropdown} className="block px-4 py-2 text-black dark:text-white hover:bg-slate-100 dark:hover:bg-gray-600 transition-transform hover:scale-105">Studies</a>
                             <a href="/#experiences" onClick={handleDropdown} className="block px-4 py-2 text-black dark:text-white hover:bg-slate-100 dark:hover:bg-gray-600 transition-transform hover:scale-105">Experiences</a>
+                            <a href="/#langages" onClick={handleDropdown} className="block px-4 py-2 text-black dark:text-white hover:bg-slate-100 dark:hover:bg-gray-600 transition-transform hover:scale-105">Langages</a>
+
                         </div>
                     )}
                 </div>

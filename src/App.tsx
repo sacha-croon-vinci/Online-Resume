@@ -2,7 +2,6 @@ import { useTheme } from './hooks/useTheme';
 import { ThemeToggle } from './components/Header/ThemeToggle';
 import { Hero } from './components/Hero';
 import { SkillCard } from './components/SkillCard';
-import { InteractiveWidget } from './components/InteractiveWidget';
 import { StudyCard } from './components/Studies/StudyCard';
 import { ExperienceCard } from './components/Experiences/ExperienceCard';
 import ScrollToTopButton from './components/Scroll/ScrollToTopButton';
@@ -49,7 +48,7 @@ function App() {
       location: 'Brussels, Belgium',
       company: 'Self-employed',
       date: '2024 - present',
-      description: 'As a webmaster, I have designed and developed the website for a client. I managed all stages of the project, from initial planning to launch, including graphic design, development, and search engine optimisation. My role also involved ongoing site management, performance analysis, and implementing regular updates to ensure an optimal user experience.',
+      description: 'As a junior webmaster, I have designed and developed the website for a client. I managed all stages of the project, from initial planning to launch, including graphic design, development, and search engine optimisation. My role also involved ongoing site management, performance analysis, and implementing regular updates to ensure an optimal user experience.',
       option: ['Webmaster', 'SEO', 'Wordpress',],
       language: ['French', 'English'],
     },
@@ -127,12 +126,16 @@ function App() {
       
       <main className="container mx-auto px-4 py-16">
         <Hero />
-        <LanguageCard data={languages}/>
+        
 
-        <div id='skills' className="border-t border-gray-300 dark:border-gray-700 my-8 pt-8 pb-8"></div> {/* Line of separation */}
+        <div id='skills' className="border-t border-gray-300 dark:border-gray-700 my-16 pt-8 "></div> 
 
-
+        <div className='flex justify-center   py-1 mb-10 mx-60 select-none'>
+          <h2 className=' dark:text-white px-5 py-2 rounded-full bg-white dark:bg-gray-800 shadow-lg text-2xl font-semibold'>Skills</h2>
+        </div>
+        
         <div className="grid md:grid-cols-2 gap-8 mb-16 ">
+          
           <SkillCard 
             title="Programming Languages" 
             items={programmingLanguages}
@@ -156,18 +159,22 @@ function App() {
           />
         </div>
         
-        <div id="studies" className="border-t border-gray-300 dark:border-gray-700 my-8 pt-8 pb-8"></div> {/* Line of separation */}
+        <div id="studies" className="border-t border-gray-300 dark:border-gray-700 my-8 pt-8 pb-8"></div> 
 
         <StudyCard data={studies}/>
         
         
-        <div id="experiences" className="border-t border-gray-300 dark:border-gray-700 my-8 pt-8 pb-8"></div> {/* Line of separation */}
+        <div id="experiences" className="border-t border-gray-300 dark:border-gray-700 my-8 pt-8 pb-8"></div>
 
         <ExperienceCard data={experiences} />
 
-        <div className="border-t border-gray-300 dark:border-gray-700 my-8 pt-8 pb-8"></div> {/* Line of separation */}
+        <div id='langages' className="border-t border-gray-300 dark:border-gray-700 my-8 pt-8 pb-8"></div> 
 
-        <InteractiveWidget />
+        <div className='flex justify-center   py-1 mb-10 mx-60 select-none'>
+          <h2 className=' dark:text-white px-5 py-2 rounded-full bg-white dark:bg-gray-800 shadow-lg text-2xl font-semibold'>Langages</h2>
+        </div>
+
+        <LanguageCard data={languages}/>
       </main>
     </div>
   );

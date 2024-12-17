@@ -37,7 +37,7 @@ export function LanguageCard({ data }: LanguageCardProps) {
             onMouseOver={() => handleMouseOver(item.title)}
             onMouseOut={handleMouseOut}>
                 <h2 className="font-semibold text-xl ">{item.title}</h2>
-                <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm
+                <span className="px-3 py-1 mt-2 bg-gray-100 dark:bg-gray-700 rounded-full text-sm
                         dark:text-gray-300">{item.level}</span>
                 
                 {hoveredItem === item.title && (

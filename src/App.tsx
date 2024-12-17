@@ -8,6 +8,7 @@ import { ExperienceCard } from './components/Experiences/ExperienceCard';
 import ScrollToTopButton from './components/Scroll/ScrollToTopButton';
 import { Navbar } from './components/Navbar/Navbar';
 import { LanguageCard } from './components/Languages/LanguageCard';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const { theme, toggleTheme } = useTheme();
@@ -119,6 +120,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
+      <Analytics />
       <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
       <ScrollToTopButton />
       <Navbar />

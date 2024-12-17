@@ -13,7 +13,7 @@ export function Navbar() {
     return (
         <nav className=" p-4 ">
             <div className="flex justify-end  text-2xl  dark:text-white">
-                <div className="fixed top-4 right-4 p-2 mr-10 select-none z-50 ">
+                <div className="fixed top-3 right-4 p-2 mr-10 select-none z-50 ">
                     {isDropdownOpen ? (<img 
                         src="/src/public/images/menuOpen.png" 
                         className='w-8 dark:invert z-max' 

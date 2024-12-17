@@ -16,4 +16,10 @@ interface Experience {
     language: string[];
 }
 
-export type { Study, Experience };
+interface Languages{
+    title: string;
+    level: string;
+    flagUrl?: string;
+}
+
+export type { Study, Experience, Languages  };

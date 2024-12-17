@@ -7,6 +7,7 @@ import { StudyCard } from './components/Studies/StudyCard';
 import { ExperienceCard } from './components/Experiences/ExperienceCard';
 import ScrollToTopButton from './components/Scroll/ScrollToTopButton';
 import { Navbar } from './components/Navbar/Navbar';
+import { LanguageCard } from './components/Languages/LanguageCard';
 
 function App() {
   const { theme, toggleTheme } = useTheme();
@@ -93,6 +94,29 @@ function App() {
     },
   ]
 
+  const languages = [
+    {
+      title: 'French',
+      level: 'Native',
+      flagUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/1920px-Flag_of_France.svg.png',
+    },
+    {
+      title: 'English',
+      level: 'Fluent - C1',
+      flagUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1920px-Flag_of_the_United_Kingdom.svg.png',
+    },
+    {
+      title: 'Dutch',
+      level: 'Intermediate - B2',
+      flagUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1920px-Flag_of_the_Netherlands.svg.png',
+    },
+    {
+      title: 'Swedish',
+      level: 'Beginner',
+      flagUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1920px-Flag_of_Sweden.svg.png',
+    }
+  ]
+
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
       <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
@@ -101,6 +125,10 @@ function App() {
       
       <main className="container mx-auto px-4 py-16">
         <Hero />
+        <LanguageCard data={languages}/>
+
+        <div id='skills' className="border-t border-gray-300 dark:border-gray-700 my-8 pt-8 pb-8"></div> {/* Line of separation */}
+
 
         <div className="grid md:grid-cols-2 gap-8 mb-16 ">
           <SkillCard 

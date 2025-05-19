@@ -1,14 +1,12 @@
 import { Experience } from "../../../type";
 import { ExperienceItem } from "./ExperienceItem";
 import { useState } from "react";
-import experiencesImage from "/src/public/images/briefcase.png";
 
 interface ExperienceCardProps {
-    data : Experience[];
+    data: Experience[];
 }
 
 export function ExperienceCard({ data }: ExperienceCardProps) {
-    
     const [showMore, setShowMore] = useState(false);
     
     const handleShowMore = () => {
@@ -16,11 +14,8 @@ export function ExperienceCard({ data }: ExperienceCardProps) {
     };
     
     return (
-        <div className="bg-white dark:bg-gray-800 p-6 mb-16 rounded-xl  shadow-lg hover:shadow-2xl transition-shadow">
-            <div className="flex gap-3 pl-5 pr-5 mb-8 justify-center">
-                <img src={experiencesImage}  alt="study image" className="w-8 h-8 dark:invert"/>
-                <h3 className="text-2xl font-bold dark:text-white ">Experiences</h3>
-            </div>
+        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300
+                      border border-gray-100 dark:border-gray-700">
             {data.slice(0, showMore ? data.length : 2).map((experience) => (
                 <ExperienceItem
                     key={experience.title}
@@ -34,16 +29,23 @@ export function ExperienceCard({ data }: ExperienceCardProps) {
                     language={experience.language}
                 />
             ))}
-            <div className="flex justify-center">
-                <button onClick={handleShowMore} className="mt-4 text-blue-500 hover:text-blue-600">
-                    {showMore ? 'Show Less' : 'Show More'}
-                </button>
-            </div>
             
-            
-            
-            
+            {data.length > 2 && (
+                <div className="flex justify-center p-6">
+                    <button 
+                        onClick={handleShowMore} 
+                        className="px-6 py-2 rounded-full bg-gradient-to-r from-blue-50 to-white dark:from-gray-800 dark:to-gray-900
+                                 text-blue-600 dark:text-blue-400 font-medium
+                                 border border-blue-200 dark:border-blue-800
+                                 hover:from-blue-500 hover:to-blue-600 hover:text-white
+                                 dark:hover:from-blue-600 dark:hover:to-blue-700
+                                 transform transition-all duration-300 ease-in-out
+                                 hover:scale-105 hover:shadow-md"
+                    >
+                        {showMore ? 'Show Less' : 'Show More'}
+                    </button>
+                </div>
+            )}
         </div>
-
     );
-    }   
+}   

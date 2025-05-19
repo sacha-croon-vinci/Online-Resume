@@ -12,10 +12,10 @@ import { Analytics } from "@vercel/analytics/react"
 function App() {
   const { theme, toggleTheme } = useTheme();
 
-  const programmingLanguages = ['Python', 'Java', 'TypeScript', 'JavaScript', 'C', 'HTML', 'CSS','SQL'];
+  const programmingLanguages = ['Python', 'Java', 'TypeScript', 'JavaScript', 'C','Dart', 'HTML', 'CSS','SQL'];
   const technologies = ['React', 'Node.js', 'Git', 'Vanilla JS','Tailwind','Bootstrap','Express.js','Junit','Next.js','REST','JWT','Vite','Virtual Machine'];
-  const tools = ['VS Code', 'Github', 'Figma', 'Lucidchart','DataGrip','Intelij','PyCharm','VMware'];
-  const DataBase = ['MongoDB', 'MySQL', 'PostgreSQL', 'SQLite','UML','SQL'];
+  const tools = ['VS Code', 'Github','Gitlab', 'Figma', 'Lucidchart','DataGrip','Intelij','PyCharm','VMware','Docker','Azure','Linux','Make','CI/CD'];
+  const DataBase = ['MongoDB', 'MySQL', 'PostgreSQL','Supabase', 'SQLite','UML','SQL'];
 
   const studies = [
     {
@@ -24,14 +24,6 @@ function App() {
       date: '2023 - present',
       link: 'https://www.vinci.be/en/',
       option: ['Software development','Cybersecurity'],
-    },
-    {
-      title: 'Bachelor degree in Computer Science',
-      school: 'ULB (Université Libre de Bruxelles)',
-      date: '2022 - 2023',
-      link: 'https://www.ulb.be/',
-      option: ['Astrophysics'],
-
     },
     {
       title: 'CESS (High School Diploma)',
@@ -43,23 +35,35 @@ function App() {
   ]
   const experiences = [
     {
-      title: 'Junior Developer',
+      title: 'Junior Software Engineer',
       it: true,
       location: 'Brussels, Belgium',
       company: 'Self-employed',
       date: '2024 - present',
-      description: 'As a junior webmaster, I have designed and developed the website for a client. I managed all stages of the project, from initial planning to launch, including graphic design, development, and search engine optimisation. My role also involved ongoing site management, performance analysis, and implementing regular updates to ensure an optimal user experience.',
-      option: ['Webmaster', 'SEO', 'Wordpress',],
+      description: 'As a junior Software Engineer, I have designed and developed a website for a client. I managed all stages of the project, from initial planning to launch, including graphic design, development, and search engine optimization. My role also involved ongoing site management, performance analysis, and implementing regular updates to ensure an optimal user experience.',
+      option: ['Webmaster', 'SEO'],
       language: ['French', 'English'],
+    },
+    {
+      title: 'Internship',
+      it: true,
+      location: 'Brussels, Belgium',
+      company: 'Federal Public Service Finance',
+      date: 'FEB 2025',
+      description: 'Assisted in managing identity and access protocols across 500+ applications for 20,000+ federal employees. ' +
+        'Analyzed account creation and access workflows. ' +
+        'Learned about data protection systems and protocols safeguarding Belgian citizens and public digital infrastructure.',
+      option: ['IT Infrastructure', 'Identity and Access Management', 'Data Protection'],
+      language: ['French', 'English', 'Dutch'],
     },
     {
       title: 'Junior Teacher',
       it: true,
       location: 'Brussels, Belgium',
-      company: 'self-employed',
-      date: '2023   - present',
-      description: 'I am teaching private lessons in computer science for students. ',
-      option: ['Python', 'JavaScript', 'HTML', 'CSS', 'Algorithmic', 'Data structure', 'SQL'],
+      company: 'Self-employed',
+      date: '2023 - present',
+      description: 'I am teaching private computer science lessons to students.',
+      option: ['Python', 'JavaScript', 'Algorithms', 'Data Structures', 'SQL'],
       language: ['French', 'English'],
     },
     {
@@ -68,8 +72,8 @@ function App() {
       location: 'Brussels, Belgium',
       company: 'Delitraiteur WSL',
       date: '2022 - present',
-      description: 'I interact with customers face-to-face, over the phone, and via email, providing personalised and attentive service. I manage orders and handle customer complaints with empathy, ensuring their issues are resolved efficiently and satisfactorily. Additionally, I am responsible for inventory management, ensuring that stock is well-organised and up-to-date to meet customer needs.' ,
-      option: ['Manage orders', 'Client services', 'cash register', 'inventory management'],
+      description: 'I interact with customers face-to-face, over the phone, and via email, providing personalized and attentive service. I manage orders and handle customer complaints with empathy, ensuring their issues are resolved efficiently and satisfactorily. Additionally, I am responsible for inventory management, ensuring that stock is well-organized and up-to-date to meet customer needs.',
+      option: ['Order Management', 'Customer Service', 'Cash Register', 'Inventory Management'],
       language: ['French', 'English', 'Dutch'],
     },
     {
@@ -78,8 +82,8 @@ function App() {
       location: 'Brussels, Belgium',
       company: 'WE Fashion',
       date: 'OCT 2021 - FEB 2022',
-      description: 'As a sales assistant at WE Fashion, I assisted customers by providing personalised advice and addressing their needs. I was also responsible for the layout of the shelves, ensuring that products were displayed in an attractive and organised manner. Additionally, I wore the brand\'s clothing to promote it, thereby contributing to increased sales and enhancing the company\'s image.',
-      option: ['Promote', 'Sale', 'inventory management'],
+      description: 'As a sales assistant at WE Fashion, I assisted customers by providing personalized advice and addressing their needs. I was also responsible for the layout of the shelves, ensuring that products were displayed in an attractive and organized manner. Additionally, I wore the brand\'s clothing to promote it, thereby contributing to increased sales and enhancing the company\'s image.',
+      option: ['Promotion', 'Sales', 'Inventory Management'],
       language: ['French', 'Dutch'],
     },
     {
@@ -89,7 +93,7 @@ function App() {
       company: 'Rodeo',
       date: 'JUN 2020 - SEPT 2022',
       description: 'During the summer holidays, I was responsible for renting out pedal cars and bicycles, primarily communicating with customers in Dutch. My duties included maintaining the bicycles to ensure they were in good working condition, as well as selling these items. My role required constant interaction with customers to meet their needs and ensure their satisfaction.',
-      option: [ 'Sale', 'Client services'],
+      option: ['Sales', 'Customer Service'],
       language: ['Dutch', 'English'],
     },
   ]
@@ -102,12 +106,12 @@ function App() {
     },
     {
       title: 'English',
-      level: 'Fluent - C1',
+      level: 'Fluent - C2',
       flagUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1920px-Flag_of_the_United_Kingdom.svg.png',
     },
     {
       title: 'Dutch',
-      level: 'Intermediate - B2',
+      level: 'Professional - C1',
       flagUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1920px-Flag_of_the_Netherlands.svg.png',
     },
     {
@@ -120,9 +124,8 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
       <Analytics />
-      <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
       <ScrollToTopButton />
-      <Navbar />
+      <Navbar theme={theme} toggleTheme={toggleTheme} />
       
       <main className="container mx-auto px-4 py-16">
         <Hero />

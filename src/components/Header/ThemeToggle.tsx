@@ -10,14 +10,15 @@ export function ThemeToggle({ theme, toggleTheme }: ThemeToggleProps) {
   return (
     <button
       onClick={toggleTheme}
-      className="fixed z-50 top-4 right-4 p-2 rounded-full bg-gray-200 dark:bg-gray-800 
-                transition-transform hover:scale-110 z-50000"
+      className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 
+                hover:bg-gray-200 dark:hover:bg-gray-700
+                transition-all duration-300"
       aria-label="Toggle theme"
     >
       {theme === 'dark' ? (
-        <Sun className="w-6 h-6 text-yellow-500" />
+        <Sun className="w-5 h-5 text-yellow-500" />
       ) : (
-        <Moon className="w-6 h-6 text-blue-600" />
+        <Moon className="w-5 h-5 text-blue-600" />
       )}
     </button>
   );

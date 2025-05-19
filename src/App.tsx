@@ -110,7 +110,7 @@ function App() {
     },
     {
       title: 'Dutch',
-      level: 'Professional - C1',
+      level: 'Professional ',
       flagUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1920px-Flag_of_the_Netherlands.svg.png',
     },
     {

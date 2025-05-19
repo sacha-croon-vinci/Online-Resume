@@ -78,7 +78,7 @@ function App() {
       location: 'Brussels, Belgium',
       company: 'WE Fashion',
       date: 'OCT 2021 - FEB 2022',
-      description: 'As a sales assistant at WE Fashion, I assisted customers by providing personalised advice and addressing their needs. I was also responsible for the layout of the shelves, ensuring that products were displayed in an attractive and organised manner. Additionally, I wore the brand’s clothing to promote it, thereby contributing to increased sales and enhancing the company’s image.',
+      description: 'As a sales assistant at WE Fashion, I assisted customers by providing personalised advice and addressing their needs. I was also responsible for the layout of the shelves, ensuring that products were displayed in an attractive and organised manner. Additionally, I wore the brand\'s clothing to promote it, thereby contributing to increased sales and enhancing the company\'s image.',
       option: ['Promote', 'Sale', 'inventory management'],
       language: ['French', 'Dutch'],
     },
@@ -128,14 +128,22 @@ function App() {
         <Hero />
         
 
-        <div id='skills' className="border-t border-gray-300 dark:border-gray-700 my-16 pt-8 "></div> 
-
-        <div className='flex justify-center py-1 mb-10 select-none'>
-          <h2 className=' dark:text-white px-5 py-2 rounded-full bg-white dark:bg-gray-800 shadow-lg text-2xl font-semibold'>Skills</h2>
+        <div id='skills' className="relative my-16">
+          <div className="absolute inset-0 flex items-center">
+            <div className="w-full border-t border-gray-200 dark:border-gray-700"></div>
+          </div>
+          <div className="relative flex justify-center">
+            <h2 className="relative dark:text-white px-8 py-3 rounded-full bg-gradient-to-r from-blue-50 to-white dark:from-gray-800 dark:to-gray-900 
+                           shadow-lg text-2xl font-bold tracking-wide
+                           border border-gray-100 dark:border-gray-700
+                           before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-r before:from-blue-500/10 before:to-transparent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300
+                           after:absolute after:inset-0 after:rounded-full after:bg-gradient-to-r after:from-transparent after:to-blue-500/10 after:opacity-0 hover:after:opacity-100 after:transition-opacity after:duration-300">
+              Skills
+            </h2>
+          </div>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8 mb-16 ">
-          
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
           <SkillCard 
             title="Programming Languages" 
             items={programmingLanguages}
@@ -149,29 +157,61 @@ function App() {
           <SkillCard 
             title="Tools" 
             items={tools}
-            
           />
           <SkillCard 
             title="DataBase" 
             items={DataBase}
             icon='database'
-            
           />
         </div>
         
-        <div id="studies" className="border-t border-gray-300 dark:border-gray-700 my-8 pt-8 pb-8"></div> 
+        <div id="studies" className="relative my-16">
+          <div className="absolute inset-0 flex items-center">
+            <div className="w-full border-t border-gray-200 dark:border-gray-700"></div>
+          </div>
+          <div className="relative flex justify-center">
+            <h2 className="relative dark:text-white px-8 py-3 rounded-full bg-gradient-to-r from-blue-50 to-white dark:from-gray-800 dark:to-gray-900 
+                           shadow-lg text-2xl font-bold tracking-wide
+                           border border-gray-100 dark:border-gray-700
+                           before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-r before:from-blue-500/10 before:to-transparent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300
+                           after:absolute after:inset-0 after:rounded-full after:bg-gradient-to-r after:from-transparent after:to-blue-500/10 after:opacity-0 hover:after:opacity-100 after:transition-opacity after:duration-300">
+              Studies
+            </h2>
+          </div>
+        </div>
 
         <StudyCard data={studies}/>
         
-        
-        <div id="experiences" className="border-t border-gray-300 dark:border-gray-700 my-8 pt-8 pb-8"></div>
+        <div id="experiences" className="relative my-16">
+          <div className="absolute inset-0 flex items-center">
+            <div className="w-full border-t border-gray-200 dark:border-gray-700"></div>
+          </div>
+          <div className="relative flex justify-center">
+            <h2 className="relative dark:text-white px-8 py-3 rounded-full bg-gradient-to-r from-blue-50 to-white dark:from-gray-800 dark:to-gray-900 
+                           shadow-lg text-2xl font-bold tracking-wide
+                           border border-gray-100 dark:border-gray-700
+                           before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-r before:from-blue-500/10 before:to-transparent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300
+                           after:absolute after:inset-0 after:rounded-full after:bg-gradient-to-r after:from-transparent after:to-blue-500/10 after:opacity-0 hover:after:opacity-100 after:transition-opacity after:duration-300">
+              Experiences
+            </h2>
+          </div>
+        </div>
 
         <ExperienceCard data={experiences} />
 
-        <div id='langages' className="border-t border-gray-300 dark:border-gray-700 my-8 pt-8 pb-8"></div> 
-
-        <div className='flex justify-center   py-1 mb-10 select-none'>
-          <h2 className=' dark:text-white px-5 py-2 rounded-full bg-white dark:bg-gray-800 shadow-lg text-2xl font-semibold'>Languages</h2>
+        <div id='langages' className="relative my-16">
+          <div className="absolute inset-0 flex items-center">
+            <div className="w-full border-t border-gray-200 dark:border-gray-700"></div>
+          </div>
+          <div className="relative flex justify-center">
+            <h2 className="relative dark:text-white px-8 py-3 rounded-full bg-gradient-to-r from-blue-50 to-white dark:from-gray-800 dark:to-gray-900 
+                           shadow-lg text-2xl font-bold tracking-wide
+                           border border-gray-100 dark:border-gray-700
+                           before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-r before:from-blue-500/10 before:to-transparent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300
+                           after:absolute after:inset-0 after:rounded-full after:bg-gradient-to-r after:from-transparent after:to-blue-500/10 after:opacity-0 hover:after:opacity-100 after:transition-opacity after:duration-300">
+              Languages
+            </h2>
+          </div>
         </div>
 
         <LanguageCard data={languages}/>

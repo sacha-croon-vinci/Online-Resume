@@ -1,5 +1,4 @@
 import { useTheme } from './hooks/useTheme';
-import { ThemeToggle } from './components/Header/ThemeToggle';
 import { Hero } from './components/Hero';
 import { SkillCard } from './components/SkillCard';
 import { StudyCard } from './components/Studies/StudyCard';
@@ -62,7 +61,7 @@ function App() {
       location: 'Brussels, Belgium',
       company: 'Self-employed',
       date: '2023 - present',
-      description: 'I am teaching private computer science lessons to students.',
+      description: 'I am a dedicated instructor providing comprehensive private computer science lessons to non CS students, with particular focus on programming techniques and essential algorithmic principles to build strong foundational skills.',
       option: ['Python', 'JavaScript', 'Algorithms', 'Data Structures', 'SQL'],
       language: ['French', 'English'],
     },
@@ -106,7 +105,7 @@ function App() {
     },
     {
       title: 'English',
-      level: 'Fluent - C2',
+      level: 'Fluent',
       flagUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1920px-Flag_of_the_United_Kingdom.svg.png',
     },
     {

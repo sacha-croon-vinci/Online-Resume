@@ -14,7 +14,7 @@ export function Hero() {
       <h1 className="text-4xl font-bold mb-2 dark:text-white">Sacha Croon</h1>
       <p className="text-gray-600 dark:text-gray-400 mb-6 max-w-2xl mx-auto">
         Passionate about building innovative solutions and learning new technologies.
-        Currently focusing on web development and software engineering as a computer sciences student.
+        Currently focusing on web development and software engineering as a computer science student.
         Looking to pursue a master's degree in cybersecurity.
       </p>
       <div className="flex justify-center gap-4">
